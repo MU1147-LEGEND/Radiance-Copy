@@ -492,6 +492,7 @@ nav .call-to-action:hover{
     transition: all 500ms ease-in-out;
     text-align: left !important;
     text-decoration: none;
+    text-transform: uppercase;
     float: left;
 }
 .contact-left .contact-download:hover{
@@ -532,6 +533,7 @@ nav .call-to-action:hover{
     margin-bottom: 45px;
     margin-top: 20px;
     transition: all 500ms ease-in-out;
+    text-transform: uppercase;
 }
 .message{
     padding-bottom: 0;
@@ -558,5 +560,9 @@ nav .call-to-action:hover{
     align-items: center;
     justify-content: center;
     margin-left: 60px;
+}
+.copyright a{
+    text-decoration: none;
+    color: var(--secondery-color);
 }
 /* footer end */
