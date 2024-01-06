@@ -36,4 +36,10 @@ function faqs() {
 }
 faqs();
 
+function footerDate(){
+  const year = document.getElementById('year');
+  let date = new Date();
+  year.innerText = date.getFullYear();
+}
+footerDate();
 

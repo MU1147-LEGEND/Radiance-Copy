@@ -539,5 +539,22 @@ nav .call-to-action:hover{
 .contact-submit:hover{
     background-color: var(--main-color);
 }
+.footer{
+    max-width: 1150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+}
 
 /* contact us end */
