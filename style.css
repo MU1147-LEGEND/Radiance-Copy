@@ -539,6 +539,9 @@ nav .call-to-action:hover{
 .contact-submit:hover{
     background-color: var(--main-color);
 }
+/* contact us end */
+
+/* footer */
 .footer{
     max-width: 1150px;
     height: 60px;
@@ -556,5 +559,4 @@ nav .call-to-action:hover{
     justify-content: center;
     margin-left: 60px;
 }
-
-/* contact us end */
+/* footer end */
