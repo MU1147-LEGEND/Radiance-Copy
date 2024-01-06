@@ -6,6 +6,7 @@
     --main-color:#42c366;
     --secondery-color:#1f1716;
     --bg-color:#d5ede0;
+    --mobile-bg:#bccec4;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -54,6 +55,9 @@ body{
 nav .logo{
     cursor: pointer;
 }
+.logo-mobile{
+    display: none;
+}
 nav{
     width: 100%;
     display: flex;
@@ -98,6 +102,7 @@ nav .call-to-action:hover{
 /* hero css */
 .hero-block{
     display: block;
+    height: 100vh;
 }
 .hero-container{
     display: flex;
@@ -281,7 +286,7 @@ nav .call-to-action:hover{
 }
 .clients-tesimonial-container .clients-title-description{
     text-align: center;
-    width: 70%;
+    max-width: 70%;
     margin: auto;
 }
 .clients-tesimonial-container .clients-title-description .clients-title{
@@ -293,7 +298,7 @@ nav .call-to-action:hover{
     line-height: 28px;
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: -20px;
 }
 .testimonial-cards-slider-one, .testimonial-cards-slider-two, .testimonial-cards-slider-three{
     display: flex;
@@ -566,3 +571,153 @@ nav .call-to-action:hover{
     color: var(--secondery-color);
 }
 /* footer end */
+
+
+/* responsive css for mobile devices max-w-480px */
+@media (max-width:480px) {
+.logo-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width:450px;
+    margin: auto;
+    text-align: center;
+}
+
+.nav-block{
+    display: none;
+}
+.background-banner{
+    display: none;
+}
+.container{
+    background-color: var(--mobile-bg);
+    padding: 25px 0 0 0;
+    max-width: 450px;
+    /* height: calc(100vh + ); */
+}
+.hero-block {
+    display: block;
+    height: fit-content;
+    padding: 10px 10px 10px 30px;
+    background-color: var(--mobile-bg);
+}
+.hero-left span, .hero-left h2{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 500;
+}
+.hero-container .hero-right{
+    padding-top: 15px;
+}
+.hero-right img{
+    text-align: center;
+}
+.hero-container{
+    flex-direction: column;
+}
+.three-container{
+    margin-top: 38px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.software, .mobile, .computer {
+    flex: 0 0 33%;
+    max-width: 450px;
+    padding: 0 20px;
+}
+.wwa-title h2{
+    font-size: 30px;
+}
+.who-we-are{
+    margin-top: -30px;
+}
+.wwa-one, .wwa-two{
+    flex-direction: column;
+}
+.wwa-one img, .wwa-two img, .wwa-description{
+    padding: 20px;
+}
+.clients-tesimonial-container .clients-title-description .clients-title{
+    font-size: 30px;
+    line-height: 85px;
+}
+.clients-tesimonial-container .clients-title-description{
+    max-width: 450px;
+    margin: auto;
+    padding: 0 30px 0 30px;
+}
+
+#card1, #card2, #card3{
+    padding-top: 55px;
+}
+.cards-navigator a{
+    cursor: none;
+}
+.faq-heading {
+    font-size: 22px;
+    font-weight: 500;
+    text-align-last: center;
+}
+.faq-left{
+    align-self: center;
+}
+.faq-left img{
+    max-width: 350px;
+}
+.faq-right .qtitle{
+    cursor: none;
+}
+.faq-container{
+    flex-direction: column;
+}
+.contact-us-bg{
+    padding: 55px 0 0 0;
+}
+.contact-left .contact-title, .contact-left .contact-description{
+    font-size: 25px;
+    color: #fff;
+    line-height: 45px;
+}
+.contact-left .contact-description{
+    margin-top: -50px;
+}
+.contact-us-container{
+    max-width: 450px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+.contact-left, .contact-right{
+    max-width:100%;
+    padding: 0 0 0 20px;
+}
+.contact-right{
+    padding-right: 20px;
+    background-color: transparent;
+    min-height: 50vh;
+    padding-bottom: 40px;
+}
+form{
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+.contact-left .contact-download{
+    padding: 12px 25px;
+    margin-top: 0;
+}
+.footer{
+    max-width: 450px;
+}
+.copyright{
+    display: block;
+    margin-left: auto;
+}
+
+
+
+
+
+}
+/* responsive css for mobile devices max-w-480px end */

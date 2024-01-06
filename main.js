@@ -43,3 +43,21 @@ function footerDate(){
 }
 footerDate();
 
+function testimonial(){
+  const card1 = document.getElementById('card1');
+  const card2 = document.getElementById('card2');
+  const card3 = document.getElementById('card3');
+  card1.firstElementChild.style.display = "none";
+  card2.firstElementChild.style.display = "none";
+  card3.firstElementChild.style.display = "none";
+  card1.firstElementChild.nextElementSibling.style.display = "none";
+  card2.firstElementChild.nextElementSibling.style.display = "none";
+  card3.firstElementChild.nextElementSibling.style.display = "none";
+}
+function testimonialCall(){
+  if(screen.width < 480){
+    testimonial();
+  }
+}
+testimonialCall();
+
