@@ -61,3 +61,25 @@ function testimonialCall(){
 }
 testimonialCall();
 
+// go to top btn scripts
+
+// Check if scrolled to the top
+function isScrolledToTop() {
+  return (document.documentElement.scrollTop || document.body.scrollTop) === 0;
+}
+// Check if scrolled to the bottom
+function isScrolledToBottom() {
+  return (document.documentElement.scrollTop + window.innerHeight) >= document.documentElement.scrollHeight;
+}
+const gTopElem = document.querySelector(".go-top");
+gTopElem.addEventListener("click", () => {
+  document.documentElement.scrollTop = 0;
+});
+
+window.onscroll = function () {
+  if (isScrolledToTop()) {
+    gTopElem.style.display = "none";
+  } else{
+      gTopElem.style.display = "block";
+  }
+};
