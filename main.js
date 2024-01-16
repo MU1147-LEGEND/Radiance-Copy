@@ -62,7 +62,6 @@ function testimonialCall(){
 testimonialCall();
 
 // go to top btn scripts
-
 // Check if scrolled to the top
 function isScrolledToTop() {
   return (document.documentElement.scrollTop || document.body.scrollTop) === 0;

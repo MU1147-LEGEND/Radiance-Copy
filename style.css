@@ -523,24 +523,52 @@ nav .call-to-action:hover {
   background-color: #fff;
   min-height: 80vh;
 }
-.name {
+/* .name {
   margin: 44px 0 20px 0 !important;
-}
+} */
 
-.name,
-.email,
-.phone,
-.message {
+.name {
   width: 80%;
   margin: 20px 0;
   padding: 12px 0 8px 10px;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 2px solid var(--secondery-color);
-  border-left: 0;
+  border: 0px;
+  border-bottom:2px solid var(--main-color);
   outline: none;
   font-size: 16px;
+  transition: all 300ms ease-in-out;
 }
+
+/* styling input placeholders */
+
+form div{
+  position: relative;
+}
+.inptxt::after{
+  content: attr(data-content);
+  position: absolute;
+  width: auto;
+  top: 0;
+  left: 0;
+  margin:1.65rem 3.8rem;
+  background-color: #fff;
+  padding: 0 8px;
+  opacity: 1;
+  pointer-events: none;
+  font-size: 16px;
+  transition: all 300ms ease-in-out;
+}
+.name:focus + .inptxt::after, .name:valid + .inptxt::after{
+  margin: 0.5rem 3.8rem;
+}
+.name:focus, .name:valid{
+  border: 1px solid var(--secondery-color);
+  border-bottom:2px solid var(--main-color);
+  border-right:2px solid var(--main-color);
+  border-left:2px solid var(--main-color);
+}
+
+/* styling input placeholders end */
+
 .contact-submit {
   display: block;
   text-align: center;
@@ -563,6 +591,7 @@ nav .call-to-action:hover {
 .contact-submit:hover {
   background-color: var(--main-color);
 }
+
 /* contact us end */
 
 /* footer */
